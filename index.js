@@ -6,9 +6,7 @@ function isPalindrome(word) {
   //reverse and store it to a variable
   // check if reverse value is equal (===) to the string
   // returns true;
-  // let re = /[\W_]/g; // or 
-  // var re = /[^A-Za-z0-9]/g;
-let symbols = /[^A-Za-z0-9]/g;
+ let symbols = /[^A-Za-z0-9]/g;
   let lowerCase = word.toLowerCase().replace(symbols, '');
   
   let stringReverse = lowerCase.split('').reverse().join(''); 
